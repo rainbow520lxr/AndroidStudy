@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.simplecaculator.utils.Caculator;
 import com.googlecode.aviator.AviatorEvaluator;
 
 public class MainActivity extends AppCompatActivity {
@@ -46,10 +47,11 @@ public class MainActivity extends AppCompatActivity {
         if(exp.equals("")) Toast.makeText(getApplicationContext(), "请先输入表达式!", Toast.LENGTH_SHORT).show();
         try {
             Log.d("MainActivity", "res.type = "+AviatorEvaluator.execute(exp).getClass().getSimpleName());
-            res = AviatorEvaluator.execute(exp).toString();
+            double temp = Caculator.conversion(exp);
+            res = String.valueOf(temp);
         }catch (Exception e){
             Log.d("MainActivity", "exp_exception : " + e.getMessage());
-            Toast.makeText(getApplicationContext(), "请输入正确的表达式!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "请重新输入合法的表达式!", Toast.LENGTH_SHORT).show();
         }
         tv_res.setText(res);
     }
@@ -62,4 +64,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void delClick(View view) {
+        if(exp.length()>0) {
+            exp = exp.substring(0, exp.length() - 1);
+            tv_exp.setText(exp);
+        }
+
+    }
 }

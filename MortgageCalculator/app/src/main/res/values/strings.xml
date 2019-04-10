@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">房贷计算器</string>
+    <string name="category">贷款类别:</string>
+    <string name="type">计算方式:</string>
+    <string-array name="category_item">
+        <item>商业贷款</item>
+        <item>公积金贷款</item>
+        <item>组合型贷款</item>
+    </string-array>
+    <string-array name="type_item">
+        <item>根据面积、单价计算</item>
+        <item>根据贷款总额计算</item>
+    </string-array>
+
+
+</resources>

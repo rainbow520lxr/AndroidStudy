@@ -60,7 +60,7 @@
             android:layout_rowWeight="1"
             android:layout_column="2"
             android:layout_columnWeight="1"
-            android:onClick="numClick"
+            android:onClick="delClick"
             android:text="@string/bt3"
             android:textSize="20sp" />
 
