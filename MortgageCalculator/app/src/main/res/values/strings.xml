@@ -1,16 +1,99 @@
 <resources>
+
     <string name="app_name">房贷计算器</string>
-    <string name="category">贷款类别:</string>
-    <string name="type">计算方式:</string>
+    <!--符号-->
+    <string name='colon'>:</string>
+    <string name="wan">万</string>
+    <string name="unit_price">元/平米</string>
+    <string name="unit_space">平方米</string>
+    <string name="percent">%</string>
+    <!--第一行-->
+    <string name="category">贷款类别</string>
     <string-array name="category_item">
         <item>商业贷款</item>
         <item>公积金贷款</item>
         <item>组合型贷款</item>
     </string-array>
+    <!--第二行-->
+    <string name="type">计算方式</string>
     <string-array name="type_item">
         <item>根据面积、单价计算</item>
         <item>根据贷款总额计算</item>
     </string-array>
+
+    <string name="loan_amount">商业贷款额</string>
+    <string name="loan_amount_hint">请输入商业贷款额</string>
+    <!--第三行-->
+    <string name="house_price">房屋单价</string>
+    <string name="house_price_hint">请输入房屋单价</string>
+
+    <string name="total_loan">贷款总额</string>
+    <string name="total_loan_hint">请输入贷款总额</string>
+
+    <string name="commercial_interest_rate">商贷利率</string>
+    <string name="commercial_interest_rate_text">4.9</string>
+    <!--第四行-->
+    <string name="house_space">房屋面积</string>
+    <string name="house_space_hint">请输入房屋面积</string>
+
+    <string name="provident_fund_loan">公积金贷款额</string>
+    <string name="provident_fund_loan_hint">请输入公积金贷款额</string>
+    <!--第五行-->
+    <string name="mortgage_percentage">按揭成数</string>
+    <string-array name="mortgage_percentage_item">
+        <item>2成</item>
+        <item>2.5成</item>
+        <item>3成</item>
+        <item>3.5成</item>
+        <item>4成</item>
+        <item>4.5成</item>
+        <item>5成</item>
+        <item>5.5成</item>
+        <item>6成</item>
+        <item>6.5成</item>
+        <item>7成</item>
+        <item>7.5成</item>
+        <item>8成</item>
+        <item>8.5成</item>
+    </string-array>
+
+    <string name="provident_fund_rate">公积金利率</string>
+    <string name="provident_fund_rate_text">3.25</string>
+    <!--第六行-->
+    <string name="mortgage_year">按揭年数</string>
+    <string-array name="mortgage_year_item">
+        <item>25年(300期)</item><item>24年(288期)</item><item>23年(276期)</item>
+        <item>22年(264期)</item><item>21年(252期)</item><item>20年(240期)</item>
+        <item>19年(228期)</item><item>18年(216期)</item><item>17年(204期)</item>
+        <item>16年(192期)</item><item>15年(180期)</item><item>14年(168期)</item>
+        <item>13年(156期)</item><item>12年(144期)</item><item>11年(132期)</item>
+        <item>10年(120期)</item><item>9年(108期)</item><item>8年(96期)</item>
+        <item>7年(84期)</item><item>6年(72期)</item><item>5年(60期)</item>
+        <item>4年(48期)</item><item>3年(36期)</item><item>2年(24期)</item>
+        <item>1年(12期)</item>
+    </string-array>
+    <!--第七行-->
+    <string name="interest_rate">贷款利率</string>
+    <string-array name="interest_rate_item">
+        <item>基准利率</item>
+        <item>7折</item>
+        <item>85折</item>
+        <item>88折</item>
+        <item>9折</item>
+        <item>95折</item>
+        <item>1.05倍</item>
+        <item>1.1倍</item>
+        <item>1.2倍</item>
+        <item>1.3倍</item>
+    </string-array>
+    <string name="interest_rate_text">4.9</string>
+    <!--第八行-->
+    <string name="repayment_method">还款方式</string>
+    <string name="radio_btn_1">等额本息</string>
+    <string name="radio_btn_2">等额本金</string>
+    <!--第九行-->
+    <string name="btn1">开始计算</string>
+    <string name="btn2">清空重填</string>
 
 
 </resources>

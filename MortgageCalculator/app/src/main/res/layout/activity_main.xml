@@ -3,20 +3,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
+
+    <!--***********************************第一行*************************************************-->
     <LinearLayout
+        android:id="@+id/category_layout"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="100dp"
+            android:layout_width="105dp"
             android:layout_height="match_parent"
+            android:gravity="center"
             android:text="@string/category"
-            android:textSize="16sp"
-            android:gravity="center"/>
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/colon"
+            android:textSize="16sp" />
 
         <Spinner
             android:id="@+id/category"
@@ -28,27 +38,450 @@
 
     <View
         android:id="@+id/divider1"
-        android:layout_width="400dp"
+        android:layout_width="390dp"
         android:layout_height="0.5dp"
         android:layout_gravity="center"
         android:background="@color/colorDivider" />
 
 
+    <!--***********************************第二行*************************************************-->
+    <LinearLayout
+        android:id="@+id/type_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/type"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/colon"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:spinnerMode="dialog"></Spinner>
+    </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/loan_amount_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/loan_amount"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/colon"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:hint="@string/loan_amount_hint"
+            android:textSize="16sp"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/wan"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="390dp"
+        android:layout_height="0.5dp"
+        android:layout_gravity="center"
+        android:background="@color/colorDivider" />
+
+    <!--***********************************第三行*************************************************-->
+
+    <LinearLayout
+        android:id="@+id/house_price_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/house_price"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/colon"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:hint="@string/house_price_hint"
+            android:textSize="16sp"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/unit_price"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/total_loan_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/total_loan"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/colon"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:hint="@string/total_loan_hint"
+            android:textSize="16sp"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/wan"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/commercial_interest_rate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/commercial_interest_rate"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/colon"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/commercial_interest_rate"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:spinnerMode="dialog"></Spinner>
+
+        <View
+            android:id="@+id/divider_1"
+            android:layout_width="0.5dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/colorDivider" />
+
+        <EditText
+            android:id="@+id/commercial_interest_rate_text"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/commercial_interest_rate_text"
+            android:textSize="16sp"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/percent"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="390dp"
+        android:layout_height="0.5dp"
+        android:layout_gravity="center"
+        android:background="@color/colorDivider" />
+
+    <!--***********************************第四行*************************************************-->
+
+
+    <LinearLayout
+        android:id="@+id/house_space_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/house_space"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/colon"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:hint="@string/house_space_hint"
+            android:textSize="16sp"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/unit_space"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/provident_fund_loan_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/provident_fund_loan"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/colon"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:hint="@string/provident_fund_loan_hint"
+            android:textSize="16sp"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/unit_space"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="390dp"
+        android:layout_height="0.5dp"
+        android:layout_gravity="center"
+        android:background="@color/colorDivider" />
+
+    <!--***********************************第五行*************************************************-->
+
+    <LinearLayout
+        android:id="@+id/mortgage_percentage_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/mortgage_percentage"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/colon"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/mortgage_percentage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:spinnerMode="dropdown"></Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/provident_fund_rate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/provident_fund_rate"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/colon"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/provident_fund_rate"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:spinnerMode="dialog"></Spinner>
+
+        <View
+            android:id="@+id/divider_2"
+            android:layout_width="0.5dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/colorDivider" />
+
+        <EditText
+            android:id="@+id/provident_fund_rate_text"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/provident_fund_rate_text"
+            android:textSize="16sp"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/percent"
+            android:textSize="16sp"/>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="390dp"
+        android:layout_height="0.5dp"
+        android:layout_gravity="center"
+        android:background="@color/colorDivider" />
+
+    <!--***********************************第六行*************************************************-->
+
+    <LinearLayout
+        android:id="@+id/mortgage_year_layout"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="100dp"
+            android:layout_width="105dp"
             android:layout_height="match_parent"
-            android:text="@string/type"
-            android:textSize="16sp"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:text="@string/mortgage_year"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/colon"
+            android:textSize="16sp" />
 
         <Spinner
-            android:id="@+id/type"
+            android:id="@+id/mortgage_year"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:spinnerMode="dialog"></Spinner>
@@ -56,11 +489,172 @@
     </LinearLayout>
 
     <View
-        android:id="@+id/divider2"
-        android:layout_width="400dp"
+        android:id="@+id/divider6"
+        android:layout_width="390dp"
         android:layout_height="0.5dp"
         android:layout_gravity="center"
         android:background="@color/colorDivider" />
 
+    <!--***********************************第七行*************************************************-->
+
+    <LinearLayout
+        android:id="@+id/interest_rate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/interest_rate"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/colon"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/interest_rate"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:spinnerMode="dialog">
+        </Spinner>
+
+        <View
+            android:id="@+id/divider_3"
+            android:layout_width="0.5dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/colorDivider" />
+
+        <EditText
+            android:id="@+id/interest_rate_text"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/interest_rate_text"
+            android:textSize="16sp"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/percent"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_width="390dp"
+        android:layout_height="0.5dp"
+        android:layout_gravity="center"
+        android:background="@color/colorDivider" />
+
+    <!--***********************************第八行*************************************************-->
+
+    <LinearLayout
+        android:id="@+id/repayment_method"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/repayment_method"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/colon"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/repayment_method_rg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/repayment_method_rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/radio_btn_1"
+                android:textSize="16sp"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/repayment_method_rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:text="@string/radio_btn_2"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider8"
+        android:layout_width="390dp"
+        android:layout_height="0.5dp"
+        android:layout_gravity="center"
+        android:background="@color/colorDivider" />
+
+    <!--***********************************第九行*************************************************-->
+
+    <LinearLayout
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/btn1"
+            android:textSize="16sp"
+            android:textColor="@color/colorBtn1Text"
+            android:background="@drawable/button1_selector"
+            android:onClick="onClickBtn1"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/btn2"
+            android:textSize="16sp"
+            android:textColor="@color/colorBtn2Text"
+            android:background="@drawable/button2_selector"
+            android:onClick="onClickBtn2"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+
+    </LinearLayout>
 
 </LinearLayout>
