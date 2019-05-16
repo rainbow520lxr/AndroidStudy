@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.support:print:28.0.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://D:/LocalMavenRepository/caches/transforms-1/files-1.1/print-28.0.0.aar/3b56baf043c2b53b92fd2f01cb0e6c2f/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://D:/LocalMavenRepository/caches/transforms-1/files-1.1/print-28.0.0.aar/3b56baf043c2b53b92fd2f01cb0e6c2f/res" />
+      <root url="jar://D:/LocalMavenRepository/caches/transforms-1/files-1.1/print-28.0.0.aar/3b56baf043c2b53b92fd2f01cb0e6c2f/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

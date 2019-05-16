@@ -116,7 +116,6 @@ public class ArithHelper {
      * @param scale 小数点后保留几位
      * @return 四舍五入后的结果
      */
-
     public static double round(double v, int scale) {
         if (scale < 0) {
             throw new IllegalArgumentException("The   scale   must   be   a   positive   integer   or   zero");
@@ -125,7 +124,6 @@ public class ArithHelper {
         java.math.BigDecimal one = new java.math.BigDecimal("1");
         return b.divide(one, scale, java.math.BigDecimal.ROUND_HALF_UP).doubleValue();
     }
-
     public static double round(String v, int scale) {
         if (scale < 0) {
             throw new IllegalArgumentException("The   scale   must   be   a   positive   integer   or   zero");
@@ -134,6 +132,4 @@ public class ArithHelper {
         java.math.BigDecimal one = new java.math.BigDecimal("1");
         return b.divide(one, scale, java.math.BigDecimal.ROUND_HALF_UP).doubleValue();
     }
-
-
 }

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.support:drawerlayout:28.0.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://D:/LocalMavenRepository/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/76a25ca936bd584427697ff9597dbfb4/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://D:/LocalMavenRepository/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/76a25ca936bd584427697ff9597dbfb4/jars/classes.jar!/" />
+      <root url="file://D:/LocalMavenRepository/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/76a25ca936bd584427697ff9597dbfb4/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

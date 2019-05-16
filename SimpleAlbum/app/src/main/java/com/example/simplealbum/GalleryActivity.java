@@ -47,13 +47,7 @@ public class GalleryActivity extends AppCompatActivity implements AdapterView.On
         //设置点击
         Log.v("sucesss", "5");
         gy.setOnItemClickListener(this);
-
-
-
-
-
     }
-
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         iv.setImageResource(imgs[position]);
